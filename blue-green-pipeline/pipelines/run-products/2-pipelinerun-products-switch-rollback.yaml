@@ -4,7 +4,10 @@ metadata:
   generateName: shop-products-rollback-
 spec:
   pipelineRef:
-    name: pipeline-blue-green    
+    name: pipeline-blue-green   
+  podTemplate:
+    securityContext:
+      fsGroup: 65532 
   params:
   - name: APP
     value: products
