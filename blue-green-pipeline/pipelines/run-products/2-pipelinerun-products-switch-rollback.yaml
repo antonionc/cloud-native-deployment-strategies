@@ -5,10 +5,10 @@ metadata:
 spec:
   pipelineRef:
     name: pipeline-blue-green   
-  podTemplate:
-    securityContext:
-      runAsNonRoot: true
-      runAsUser: 1001
+  # podTemplate:
+  #   securityContext:
+  #     runAsNonRoot: true
+  #     runAsUser: 1001
   params:
   - name: APP
     value: products
