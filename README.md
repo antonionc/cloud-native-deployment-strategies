@@ -20,17 +20,18 @@ We are prosing the use of two different deployment strategies blue/green deploiy
 
 ### Blue / Green deployments
 
-In [blue/green deployments](https://www.redhat.com/en/topics/devops/what-is-blue-green-deployment) we have two concurrent deployments of the same application with two differente versions, and the traffice gradually migrates from the current (blue) version to the new (green) version.
+In [blue/green deployments](https://www.redhat.com/en/topics/devops/what-is-blue-green-deployment) we have two concurrent deployments of the same application with two differente versions, and the traffic gradually migrates from the current (blue) version to the new (green) version.
 
-The performance or impact of the new version is monitored and if everything goes according to plan, the percentage of traffic that is directed towards the green version becomes 100% 
+The performance or impact of the new version is monitored and if everything goes according to plan, the percentage of traffic that is directed towards the green version becomes 100%.
 
 The blue version remains active and provides a easy rollback path in case the green version has some issues.
 
 
 ### Canary deployments
 
-In [canary deployments](https://developers.redhat.com/blog/2022/10/07/coming-terms-canary-deployment) we have several concurrent versions of the same application with slight differences, and we select a portion of our client traffic to each version and observe the difference in it performance and usability.
+In [canary deployments](https://developers.redhat.com/blog/2022/10/07/coming-terms-canary-deployment) we have several concurrent versions of the same application with slight differences, and we direct a portion of our client traffic to each version and observe the difference in it performance and usability.
 
+Canary deployments allows us to test multiple versions of our application in production at the same time, and see the impact of each version.
 
 Those are the different `Cloud Native` deployment strategies that we have developed, you can click on each one and test it.
 
